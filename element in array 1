@@ -1,0 +1,55 @@
+anguage: Java 15
+
+ Open in editor
+1
+import java.util.Scanner;
+2
+​
+3
+public class SearchElement {
+4
+    public static void main(String[] args) {
+5
+        Scanner sc = new Scanner(System.in);
+6
+        int N = sc.nextInt();
+7
+        int[] arr = new int[N];
+8
+        for (int i = 0; i < N; i++) {
+9
+            arr[i] = sc.nextInt();
+10
+        }
+11
+        int X = sc.nextInt();
+12
+        boolean found = false;
+13
+        for (int i = 0; i < N; i++) {
+14
+            if (arr[i] == X) {
+15
+                found = true;
+16
+                break;
+17
+            }
+18
+        }
+19
+        if (found) {
+20
+            System.out.println("Found");
+21
+        } else {
+22
+            System.out.println("Not Found");
+23
+        }
+24
+    }
+25
+}
+26
+​
