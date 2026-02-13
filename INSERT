@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner s=new Scanner(System.in);
+        String S=s.nextLine();
+        String T=s.nextLine();
+        int a=s.nextInt();
+        StringBuilder sb=new StringBuilder(S);
+        sb.insert(a,T);
+        System.out.println(sb);
+    }
+}
